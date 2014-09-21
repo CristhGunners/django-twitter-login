@@ -75,8 +75,6 @@ Si no incluímos ``'django.contrib.auth.backends.ModelBackend'`` al final de nue
 
 Necesitamos agregar las urls que utilizaremos en este caso. Para nuestro ejemplo usaremos **dos** en *settings.py*. Exite una gran variedad que podemos revisar en la documentacion oficial.
 
-[Documentacion Oficial](http://python-social-auth.readthedocs.org/en/latest/)
-
 ```
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/home/'
 SOCIAL_AUTH_LOGIN_URL = '/'
@@ -92,4 +90,10 @@ Al final sólo nos resta colocar el enlace para que nuestros usuarios se puedan 
 
 ```
 <a href="{% url 'social:begin' 'twitter' %}">Twitter</a>
+```
 
+### Documentacion Oficial
+
+Para poder logrer el uso de otras funciones de Python Social Auth's podemos revisar la documentacion oficial y ver los proveedores que dispone y todo lo que podemos lograr con esta espectacular libreria.
+
+[Documentacion Oficial](http://python-social-auth.readthedocs.org/en/latest/)
