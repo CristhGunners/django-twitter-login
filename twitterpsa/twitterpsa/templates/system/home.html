@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static from staticfiles %}
+
+{% block title %}
+	<title> CristhGunners Login Twitter {{user.first_name}} </title>
+{% endblock %}
+
+{% block content %}
+	<section class="home">
+		<ul>
+			<li><span class="icon-user"></span> <strong> {{user.username}}</strong></li>
+			<li><span class="icon-user"></span> <strong> {{user.first_name}}</strong></li>
+			<li><span class="icon-user"></span> <strong> {{user.last_name}}</strong></li>
+		</ul>
+		<div class="list-button">
+			<a href="https://github.com/CristhGunners/django-twitter-login" target="_blank" class="gris"><span class="icon-github-alt"></span> Github </a>
+			<a href="https://twitter.com/CristhGunners" target="_blank" class="blue"><span class="icon-twitter"></span> Twitter </a>
+			<a href="{% url 'auth:logout' %}?next=/" class="red"><span class="icon-times"></span> Salir </a>
+		</div>
+		<div class="info">
+			<p>
+				Revisa el ejemplo en GitHub para encontrar mas información de como crear este Login.
+				<strong>By CristhGunners </strong>
+			</p>
+		</div>
+	</section>
+{% endblock %}

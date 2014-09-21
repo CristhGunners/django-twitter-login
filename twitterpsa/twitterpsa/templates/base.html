@@ -1,0 +1,25 @@
+{% load static from staticfiles %}
+
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	{% block title %}{% endblock %}
+	<link rel="stylesheet" href="{% static "css/normalize.css" %}">
+	<link rel="stylesheet" href="{% static "css/style.css" %}">
+	<link rel="stylesheet" href="{% static "css/icomoon/style.css" %}">
+</head>
+<body class="login">
+	<header>
+		<a href="https://github.com/CristhGunners/django-twitter-login" target="_blank" class="social left"><span class="icon-github-alt"></span></a>
+		<h1><a href="{% url 'login' %}"> Twitter Login </a></h1>
+		<a href="https://twitter.com/CristhGunners" target="_blank" class="social right"><span class="icon-twitter"></span></a>
+	</header>
+	<section class="content">
+		<div class="capa icon-github-alt"></div>
+		{% block content %}{% endblock %}
+	</section>
+	{% block js_extra %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% load static from staticfiles %}
+
+{% block title %}
+	<title> CristhGunners Login Twitter </title>
+{% endblock %}
+
+{% block content %}
+	<section class="home">
+		<div class="list-button">
+			<a href="{% url 'social:begin' 'twitter' %}" class="blue"><span class="icon-twitter"></span> Entrar </a>
+		</div>
+		<div class="info">
+			<p>
+				Revisa el ejemplo en GitHub para encontrar mas información de como crear este Login.
+				<strong>By CristhGunners </strong>
+			</p>
+		</div>
+	</section>
+{% endblock %}
