@@ -92,6 +92,15 @@ Al final sólo nos resta colocar el enlace para que nuestros usuarios se puedan 
 <a href="{% url 'social:begin' 'twitter' %}">Twitter</a>
 ```
 
+# Demo
+
+Para poder probar la **demo** solo necesitamos bajar el repositorio de github.
+- Una vez tengamos el repositorio, necesitamos instalar Python Social Auth's
+- Luego accedemos por linea de comando y ejecutamos *syncdb*
+- Ahora necesitamos agregar las api´key´s de nuestra aplicación en Twitter en nuestro archivo **setting.py**
+- Una vez configurado el proyecto , arrancamos el servidor y a probar la demo
+
+
 ### Documentacion Oficial
 
 Para poder logrer el uso de otras funciones de Python Social Auth's podemos revisar la documentacion oficial y ver los proveedores que dispone y todo lo que podemos lograr con esta espectacular libreria.
