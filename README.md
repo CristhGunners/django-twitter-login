@@ -9,7 +9,7 @@ Para poder instalar Python Social Auth’s, utilizaremos pip para descargar la l
 
     $ pip install python-social-auth
 
-Para poder utilizar Python Social Auth’s en nuestro poryecto, debemos incluirla en la lista de nuestras app's:
+Para poder utilizar Python Social Auth’s en nuestro proyecto, debemos incluirla en la lista de nuestras app's:
 
     
     DJANGO_APPS = (
